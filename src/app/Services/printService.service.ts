@@ -8,7 +8,7 @@ import { TradingData } from '../models/TradingData';
   providedIn: 'root',
 })
 export class PrintServiceService {
-  private baseUrl = 'http://localhost:8082/';
+  private baseUrl = 'https://fx-trading-finzly.herokuapp.com/';
   constructor(private http: HttpClient) {}
 
   printTrade(): Observable<TradingData[]> {
